@@ -1,0 +1,32 @@
+1cb382dac08d66736d21c1ac941813968c661f71	not-for-merge	branch 'master' of https://github.com/Ogury/ogury-sdk-spm
+3af84b7cb7260f0176743d4684eca9033ab57577	not-for-merge	branch 'release/5.2.0' of https://github.com/Ogury/ogury-sdk-spm
+254ebc75085e750707d85a88590982a625d945f2	not-for-merge	'refs/pull/1/head' of https://github.com/Ogury/ogury-sdk-spm
+3af84b7cb7260f0176743d4684eca9033ab57577	not-for-merge	'refs/pull/2/head' of https://github.com/Ogury/ogury-sdk-spm
+27ad1e2f93742838892013040fea00bd5675928a	not-for-merge	'refs/pull/2/merge' of https://github.com/Ogury/ogury-sdk-spm
+38650d8273f7ba2547bc53d2ca657da2ac687303	not-for-merge	tag 'internal-5.1.0' of https://github.com/Ogury/ogury-sdk-spm
+d562023eb734a412688d1a97d268e391a1a34b7d	not-for-merge	tag 'internal-5.1.0-ci.1' of https://github.com/Ogury/ogury-sdk-spm
+4a2acda11306e129287a5193850705e3612000ee	not-for-merge	tag 'internal-5.1.0-ci.2' of https://github.com/Ogury/ogury-sdk-spm
+20dbdee828c266bb59f3593a4f50e2316d28bcd1	not-for-merge	tag 'internal-5.1.0-ci.3' of https://github.com/Ogury/ogury-sdk-spm
+cb8607b7e5f72c6d15c871d933e91bc97a207669	not-for-merge	tag 'internal-5.1.0-ci.4' of https://github.com/Ogury/ogury-sdk-spm
+a3185d761f117c0a708f4b2ae65851d32f1994b8	not-for-merge	tag 'internal-5.1.0-cocoapods.1' of https://github.com/Ogury/ogury-sdk-spm
+3efbbb3b2b9a2077f52da57a64208b2d25dec7ca	not-for-merge	tag 'internal-5.1.0-cocoapods.10' of https://github.com/Ogury/ogury-sdk-spm
+bc9f529c7e65f54e94b4622f3889af358fb5c759	not-for-merge	tag 'internal-5.1.0-cocoapods.11' of https://github.com/Ogury/ogury-sdk-spm
+f1bf1829235dc5edcb07961b89768a7a13724220	not-for-merge	tag 'internal-5.1.0-cocoapods.2' of https://github.com/Ogury/ogury-sdk-spm
+65f57d6d011a28d6563cce6b3dabd2b2807dbcfc	not-for-merge	tag 'internal-5.1.0-cocoapods.3' of https://github.com/Ogury/ogury-sdk-spm
+580a4e252652c31c76ce144adb9c4fe1f878d1e0	not-for-merge	tag 'internal-5.1.0-cocoapods.4' of https://github.com/Ogury/ogury-sdk-spm
+7c66e4598c9a7470c907627b809e176cd52ec599	not-for-merge	tag 'internal-5.1.0-cocoapods.5' of https://github.com/Ogury/ogury-sdk-spm
+23f008ec711157607f67ac655bc8af7347b363e4	not-for-merge	tag 'internal-5.1.0-cocoapods.6' of https://github.com/Ogury/ogury-sdk-spm
+0f7cdcf3bd57dfa48fa34aa8019cac958c1de49f	not-for-merge	tag 'internal-5.1.0-cocoapods.7' of https://github.com/Ogury/ogury-sdk-spm
+66e8e9a3ad673728a02fae44a1962a9cf3eab5bf	not-for-merge	tag 'internal-5.1.0-cocoapods.8' of https://github.com/Ogury/ogury-sdk-spm
+989e3fcebc715ef56e8ae380854e651d3269f5ed	not-for-merge	tag 'internal-5.1.0-cocoapods.9' of https://github.com/Ogury/ogury-sdk-spm
+d562023eb734a412688d1a97d268e391a1a34b7d	not-for-merge	tag 'sdk-release-0.0.1' of https://github.com/Ogury/ogury-sdk-spm
+4a2acda11306e129287a5193850705e3612000ee	not-for-merge	tag 'sdk-release-0.0.2' of https://github.com/Ogury/ogury-sdk-spm
+20dbdee828c266bb59f3593a4f50e2316d28bcd1	not-for-merge	tag 'sdk-release-0.0.3' of https://github.com/Ogury/ogury-sdk-spm
+cb8607b7e5f72c6d15c871d933e91bc97a207669	not-for-merge	tag 'sdk-release-0.0.4' of https://github.com/Ogury/ogury-sdk-spm
+a3185d761f117c0a708f4b2ae65851d32f1994b8	not-for-merge	tag 'sdk-release-5.1.0' of https://github.com/Ogury/ogury-sdk-spm
+65f57d6d011a28d6563cce6b3dabd2b2807dbcfc	not-for-merge	tag 'sdk-release-5.1.0-cocoapods.1' of https://github.com/Ogury/ogury-sdk-spm
+580a4e252652c31c76ce144adb9c4fe1f878d1e0	not-for-merge	tag 'sdk-release-5.1.0-cocoapods.2' of https://github.com/Ogury/ogury-sdk-spm
+4429aa2ad28cbab91c421ece151196267dac180d	not-for-merge	tag 'sdk-release-5.1.0-cocoapods.3' of https://github.com/Ogury/ogury-sdk-spm
+d562023eb734a412688d1a97d268e391a1a34b7d	not-for-merge	tag 'sdk-release-5.1.0.1' of https://github.com/Ogury/ogury-sdk-spm
+b0353cf1daef5b7581da5762871bb16bc9f33f05	not-for-merge	tag 'v5.1.0-cocoapods.10' of https://github.com/Ogury/ogury-sdk-spm
+79d0c05563917d41a51b63ed8159fcd8e27a2ed5	not-for-merge	tag 'v5.1.0-cocoapods.11' of https://github.com/Ogury/ogury-sdk-spm
