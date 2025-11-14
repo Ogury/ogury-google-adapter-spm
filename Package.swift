@@ -28,6 +28,10 @@ let package = Package(
                 "OguryMediationGoogleMobileAds",
                 .product(name: "OgurySdk", package: "ogury-sdk-spm"),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+            ],
+            linkerSettings: [
+                .linkedLibrary("c++"),
+                .unsafeFlags(["-ObjC"]) 
             ]
         )
     ]

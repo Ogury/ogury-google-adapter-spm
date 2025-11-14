@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import OguryGoogleMobileAdsAdapter
+import OguryMediationGoogleMobileAds
+import OgurySdk
 
 class ViewController: UIViewController {
     @IBOutlet weak var sdkVersion: UILabel!
@@ -112,10 +113,7 @@ class ViewController: UIViewController {
             "OgurySdk did not start"
         }
     }
-    var interAd: OguryInterstitialAd = {
-        let ad = OguryInterstitialAd(adUnitId: Constants.interAdUnitId)
-        return ad
-    }()
+    var interAd: InterstitialAd?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,10 +121,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startSdk(_ sender: Any) {
-        sdkState = .starting
-        adState = .idle
-        // starting OgurySdk
-        Ogury.start(with: Constants.assetKey) { success, error in
+        Task {
+            sdkState = .starting
+            adState = .idle
+            OguryMediationGoogleMobileAds.shared().setLogLevel(.all)
+            // start Ogury
+            let (success, error) = await Ogury.start(with: Constants.assetKey)
             if let error {
                 self.sdkState = .error(error)
                 return
@@ -135,18 +135,28 @@ class ViewController: UIViewController {
                 self.sdkState = .error(SdkError.sdkNotStarted)
                 return
             }
+            
+            // starting AdMob
+            let res = await MobileAds.shared.start()
+            guard !res.adapterStatusesByClassName.isEmpty else {
+                self.sdkState = .error(SdkError.sdkNotStarted)
+                return
+            }
             self.sdkState = .started
         }
     }
     
     @IBAction func load(_ sender: Any) {
-        adState = .loading
-        interAd.delegate = self
-        interAd.load()
+        Task {
+            adState = .loading
+            self.interAd = try? await .load(with: Constants.interAdUnitId)
+            interAd?.fullScreenContentDelegate = self
+            
+        }
     }
     
     @IBAction func show(_ sender: Any) {
-        interAd.show(in: self)
+        interAd?.present(from: self)
         adState = .showing
     }
     
@@ -155,7 +165,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: OguryInterstitialAdDelegate {
+extension ViewController: FullScreenContentDelegate {
     func interstitialAdDidLoad(_ interstitialAd: OguryInterstitialAd) {
         adState = .loaded
     }
