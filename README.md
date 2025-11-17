@@ -1,15 +1,15 @@
-# ogury-sdk-spm
-Welcome to the Swift Package Manager repository for iOS Ogury Sdk
+# ogury-google-adapter-spm
+Welcome to the Swift Package Manager repository for iOS Ogury AdMob Custom Events adapter
 
 ## Installation
 
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
 ### Directly from Xcode
-This is the recommend method when you integrate OgurySdk with SPM right into your app. 
+This is the recommend method when you integrate Ogury Sdks with SPM right into your app. 
 
 1. Open File > Add Package Dependency right from Xcode's [file menu](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app#Add-a-package-dependency)
-2. In the search field, enter `https://github.com/Ogury/ogury-sdk-spm.git`
+2. In the search field, enter `https://github.com/Ogury/ogury-google-adapter-spm`
 3. We recommend that you always use the latest version
 4. Be sure to target your app's target when validating the Sdk dependency
 
@@ -22,7 +22,7 @@ To integrate the OgurySdk into your Xcode project using Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Ogury/ogury-sdk-spm.git")
+    .package(url: "https://github.com/Ogury/ogury-google-adapter-spm")
 ]
 ```
 
