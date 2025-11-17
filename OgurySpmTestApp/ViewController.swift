@@ -144,7 +144,7 @@ class ViewController: UIViewController {
             }
             
             // starting AdMob
-            MobileAds.shared.requestConfiguration.testDeviceIdentifiers = ["9f89c84a559f573636a47ff8daed0d33"]
+            MobileAds.shared.requestConfiguration.testDeviceIdentifiers = [ "664d1bf78c074721173eb90b18481638" ]
             let res = await MobileAds.shared.start()
             guard !res.adapterStatusesByClassName.isEmpty else {
                 self.sdkState = .error(SdkError.adMobSdkNotStarted)
@@ -185,6 +185,12 @@ class ViewController: UIViewController {
     
     @IBAction func requestConsent(_ sender: Any) {
         AdMobConsentManager.shared.resetConsent(viewController: self)
+    }
+    
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            Task { try? await MobileAds.shared.presentAdInspector(from: self) }
+        }
     }
 }
 
