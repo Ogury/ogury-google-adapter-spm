@@ -8,6 +8,9 @@
 import UIKit
 import OguryMediationGoogleMobileAds
 import OgurySdk
+import AppTrackingTransparency
+import CryptoKit
+import AdSupport
 
 class ViewController: UIViewController {
     @IBOutlet weak var sdkVersion: UILabel!
@@ -108,16 +111,20 @@ class ViewController: UIViewController {
     }
     
     enum SdkError: LocalizedError {
-        case sdkNotStarted
+        case sdkNotStarted, adMobSdkNotStarted, adapterNotLoaded
         var errorDescription: String? {
-            "OgurySdk did not start"
+            switch self {
+                case .sdkNotStarted: return "OgurySdk did not start"
+                case .adMobSdkNotStarted: return "AdMob Sdk did not start"
+                case .adapterNotLoaded: return "Ogury Adapter was not loaded"
+            }
         }
     }
     var interAd: InterstitialAd?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sdkVersion.text = Ogury.sdkVersion()
+        sdkVersion.text = "Ogury Sdk \(Ogury.sdkVersion())"
     }
     
     @IBAction func startSdk(_ sender: Any) {
@@ -137,9 +144,20 @@ class ViewController: UIViewController {
             }
             
             // starting AdMob
+            MobileAds.shared.requestConfiguration.testDeviceIdentifiers = ["9f89c84a559f573636a47ff8daed0d33"]
             let res = await MobileAds.shared.start()
             guard !res.adapterStatusesByClassName.isEmpty else {
-                self.sdkState = .error(SdkError.sdkNotStarted)
+                self.sdkState = .error(SdkError.adMobSdkNotStarted)
+                return
+            }
+            guard let adMobStatus: AdapterStatus = res.adapterStatusesByClassName["GADMobileAds"],
+                  adMobStatus.state == .ready else {
+                self.sdkState = .error(SdkError.adMobSdkNotStarted)
+                return
+            }
+            guard let interCEStatus: AdapterStatus = res.adapterStatusesByClassName["OguryInterstitialCustomEvents"],
+                  interCEStatus.state == .ready else  {
+                self.sdkState = .error(SdkError.adapterNotLoaded)
                 return
             }
             self.sdkState = .started
@@ -149,8 +167,13 @@ class ViewController: UIViewController {
     @IBAction func load(_ sender: Any) {
         Task {
             adState = .loading
-            self.interAd = try? await .load(with: Constants.interAdUnitId)
-            interAd?.fullScreenContentDelegate = self
+            self.interAd = try? await InterstitialAd.load(with: Constants.interAdUnitId, request: .init())
+            guard let interAd else {
+                adState = .error
+                return
+            }
+            adState = .loaded
+            interAd.fullScreenContentDelegate = self
             
         }
     }
@@ -166,24 +189,14 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: FullScreenContentDelegate {
-    func interstitialAdDidLoad(_ interstitialAd: OguryInterstitialAd) {
-        adState = .loaded
+    func adWillPresentFullScreenContent(_ ad: any FullScreenPresentingAd) {
+        adState = .showing
     }
-    
-    func interstitialAdDidClick(_ interstitialAd: OguryInterstitialAd) {
-        
-    }
-    
-    func interstitialAdDidClose(_ interstitialAd: OguryInterstitialAd) {
-        adState = .closed
-    }
-    
-    func interstitialAdDidTriggerImpression(_ interstitialAd: OguryInterstitialAd) {
-        
-    }
-    
-    func interstitialAd(_ interstitialAd: OguryInterstitialAd, didFailWithError error: OguryAdError) {
+    func ad(_ ad: any FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Error) {
         adState = .error
         sdkState = .error(error)
+    }
+    func adDidDismissFullScreenContent(_ ad: any FullScreenPresentingAd) {
+        adState = .closed
     }
 }

@@ -8,6 +8,6 @@
 import Foundation
 
 struct Constants {
-    static let assetKey = "OGY-CE0BDC1C1A9F"
-    static let interAdUnitId = "ca-app-pub-5735986212655126/6644649999"
+    static let assetKey = "OGY-25D0E09F996E"
+    static let interAdUnitId = "ca-app-pub-5735986212655126/5580230390"
 }

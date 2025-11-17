@@ -1,5 +1,5 @@
 {
-  "originHash" : "c932591be2541d5df9b4bdba774980b1166b4fd1307c6ec779275fd0e51ba0df",
+  "originHash" : "d058f0069709798a9bfeeb5550c8c4662f6c5ea6fcbb39db547d8247858194c8",
   "pins" : [
     {
       "identity" : "ogury-sdk-spm",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/Ogury/ogury-sdk-spm",
       "state" : {
         "branch" : "release/5.2.0",
-        "revision" : "3af84b7cb7260f0176743d4684eca9033ab57577"
+        "revision" : "3f511a66483b6f6510c5ad097f9254ef53624b6c"
       }
     },
     {
