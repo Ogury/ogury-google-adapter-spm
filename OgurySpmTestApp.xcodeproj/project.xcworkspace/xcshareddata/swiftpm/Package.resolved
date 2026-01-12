@@ -1,0 +1,33 @@
+{
+  "originHash" : "d058f0069709798a9bfeeb5550c8c4662f6c5ea6fcbb39db547d8247858194c8",
+  "pins" : [
+    {
+      "identity" : "ogury-sdk-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Ogury/ogury-sdk-spm",
+      "state" : {
+        "revision" : "d508ec9f583588883973fdd862f97af0e91df280",
+        "version" : "5.2.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-mobile-ads",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads",
+      "state" : {
+        "revision" : "32c61bd35c10517bb9d1d28252af71fe7fd3d0c8",
+        "version" : "12.13.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-user-messaging-platform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
+      "state" : {
+        "revision" : "13b248eaa73b7826f0efb1bcf455e251d65ecb1b",
+        "version" : "3.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -1,0 +1,35 @@
+# pack-refs with: peeled fully-peeled sorted 
+1cb382dac08d66736d21c1ac941813968c661f71 refs/heads/master
+3af84b7cb7260f0176743d4684eca9033ab57577 refs/heads/release/5.2.0
+254ebc75085e750707d85a88590982a625d945f2 refs/pull/1/head
+3af84b7cb7260f0176743d4684eca9033ab57577 refs/pull/2/head
+27ad1e2f93742838892013040fea00bd5675928a refs/pull/2/merge
+38650d8273f7ba2547bc53d2ca657da2ac687303 refs/tags/internal-5.1.0
+d562023eb734a412688d1a97d268e391a1a34b7d refs/tags/internal-5.1.0-ci.1
+4a2acda11306e129287a5193850705e3612000ee refs/tags/internal-5.1.0-ci.2
+20dbdee828c266bb59f3593a4f50e2316d28bcd1 refs/tags/internal-5.1.0-ci.3
+cb8607b7e5f72c6d15c871d933e91bc97a207669 refs/tags/internal-5.1.0-ci.4
+a3185d761f117c0a708f4b2ae65851d32f1994b8 refs/tags/internal-5.1.0-cocoapods.1
+3efbbb3b2b9a2077f52da57a64208b2d25dec7ca refs/tags/internal-5.1.0-cocoapods.10
+bc9f529c7e65f54e94b4622f3889af358fb5c759 refs/tags/internal-5.1.0-cocoapods.11
+f1bf1829235dc5edcb07961b89768a7a13724220 refs/tags/internal-5.1.0-cocoapods.2
+65f57d6d011a28d6563cce6b3dabd2b2807dbcfc refs/tags/internal-5.1.0-cocoapods.3
+580a4e252652c31c76ce144adb9c4fe1f878d1e0 refs/tags/internal-5.1.0-cocoapods.4
+7c66e4598c9a7470c907627b809e176cd52ec599 refs/tags/internal-5.1.0-cocoapods.5
+23f008ec711157607f67ac655bc8af7347b363e4 refs/tags/internal-5.1.0-cocoapods.6
+0f7cdcf3bd57dfa48fa34aa8019cac958c1de49f refs/tags/internal-5.1.0-cocoapods.7
+66e8e9a3ad673728a02fae44a1962a9cf3eab5bf refs/tags/internal-5.1.0-cocoapods.8
+989e3fcebc715ef56e8ae380854e651d3269f5ed refs/tags/internal-5.1.0-cocoapods.9
+d562023eb734a412688d1a97d268e391a1a34b7d refs/tags/sdk-release-0.0.1
+4a2acda11306e129287a5193850705e3612000ee refs/tags/sdk-release-0.0.2
+20dbdee828c266bb59f3593a4f50e2316d28bcd1 refs/tags/sdk-release-0.0.3
+cb8607b7e5f72c6d15c871d933e91bc97a207669 refs/tags/sdk-release-0.0.4
+a3185d761f117c0a708f4b2ae65851d32f1994b8 refs/tags/sdk-release-5.1.0
+65f57d6d011a28d6563cce6b3dabd2b2807dbcfc refs/tags/sdk-release-5.1.0-cocoapods.1
+580a4e252652c31c76ce144adb9c4fe1f878d1e0 refs/tags/sdk-release-5.1.0-cocoapods.2
+4429aa2ad28cbab91c421ece151196267dac180d refs/tags/sdk-release-5.1.0-cocoapods.3
+d562023eb734a412688d1a97d268e391a1a34b7d refs/tags/sdk-release-5.1.0.1
+b0353cf1daef5b7581da5762871bb16bc9f33f05 refs/tags/v5.1.0-cocoapods.10
+^3efbbb3b2b9a2077f52da57a64208b2d25dec7ca
+79d0c05563917d41a51b63ed8159fcd8e27a2ed5 refs/tags/v5.1.0-cocoapods.11
+^bc9f529c7e65f54e94b4622f3889af358fb5c759
