@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "437449502E09517F00475BFA"
-               BuildableName = "OgySpmTests.app"
+               BuildableName = "OgyGamAdapter.app"
                BlueprintName = "OgurySpmTestApp"
                ReferencedContainer = "container:OgurySpmTestApp.xcodeproj">
             </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "437449502E09517F00475BFA"
-            BuildableName = "OgySpmTests.app"
+            BuildableName = "OgyGamAdapter.app"
             BlueprintName = "OgurySpmTestApp"
             ReferencedContainer = "container:OgurySpmTestApp.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "437449502E09517F00475BFA"
-            BuildableName = "OgySpmTests.app"
+            BuildableName = "OgyGamAdapter.app"
             BlueprintName = "OgurySpmTestApp"
             ReferencedContainer = "container:OgurySpmTestApp.xcodeproj">
          </BuildableReference>
