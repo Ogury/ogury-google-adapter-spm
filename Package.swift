@@ -30,8 +30,7 @@ let package = Package(
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ],
             linkerSettings: [
-                .linkedLibrary("c++"),
-                .unsafeFlags(["-ObjC"]) 
+                .linkedLibrary("c++")
             ]
         )
     ]

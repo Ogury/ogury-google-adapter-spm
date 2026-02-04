@@ -26,6 +26,10 @@ dependencies: [
 ]
 ```
 
+## Required: Linker Flag
+
+Add `-ObjC` to your app target's **Build Settings → Other Linker Flags**.
+
 ## Companion test application
 You can check our companion test application `OgurySpmTestApp` that ships with our SDK. 
 
