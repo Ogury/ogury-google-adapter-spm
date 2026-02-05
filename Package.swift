@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OguryMediationGoogleMobileAds",
-            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.2.0.0/OguryMediationGoogleMobileAds-5.2.0.0.zip",
-            checksum: "eff1952b29ea349806000c31b6233fa7e9be55de6f656574bf8fdf03add424f8"
+            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.2.0.1/OguryMediationGoogleMobileAds-5.2.0.1.zip",
+            checksum: "df0c4740da9bae2ec274f74475508088a0da636b0acb33f419cc0cc072a97b25"
         ),
         .target(
             name: "OguryGoogleMobileAdsAdapter",
