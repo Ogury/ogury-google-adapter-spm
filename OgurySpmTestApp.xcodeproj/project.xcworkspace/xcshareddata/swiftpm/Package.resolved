@@ -1,5 +1,5 @@
 {
-  "originHash" : "d058f0069709798a9bfeeb5550c8c4662f6c5ea6fcbb39db547d8247858194c8",
+  "originHash" : "c932591be2541d5df9b4bdba774980b1166b4fd1307c6ec779275fd0e51ba0df",
   "pins" : [
     {
       "identity" : "ogury-sdk-spm",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads",
       "state" : {
-        "revision" : "32c61bd35c10517bb9d1d28252af71fe7fd3d0c8",
-        "version" : "12.13.0"
+        "revision" : "1239c23464503053c17d37ee5daa70de3455e9c8",
+        "version" : "12.14.0"
       }
     },
     {

@@ -10,6 +10,7 @@
 		43744C602E09819200475BFA /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 43744C5F2E09819200475BFA /* GoogleMobileAds */; };
 		438131902E0C2180004067AD /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4381318F2E0C2180004067AD /* GoogleMobileAds */; };
 		43870E212EC77B0700725294 /* OguryGoogleMobileAdsAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 43870E202EC77B0700725294 /* OguryGoogleMobileAdsAdapter */; };
+		43B80B6E2F3B39CF00F0236D /* OguryGoogleMobileAdsAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 43B80B6D2F3B39CF00F0236D /* OguryGoogleMobileAdsAdapter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43744C602E09819200475BFA /* GoogleMobileAds in Frameworks */,
+				43B80B6E2F3B39CF00F0236D /* OguryGoogleMobileAdsAdapter in Frameworks */,
 				43870E212EC77B0700725294 /* OguryGoogleMobileAdsAdapter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +126,7 @@
 			packageProductDependencies = (
 				43744C5F2E09819200475BFA /* GoogleMobileAds */,
 				43870E202EC77B0700725294 /* OguryGoogleMobileAdsAdapter */,
+				43B80B6D2F3B39CF00F0236D /* OguryGoogleMobileAdsAdapter */,
 			);
 			productName = OgurySpmTestApp;
 			productReference = 437449512E09517F00475BFA /* OgyGamAdapter.app */;
@@ -183,7 +186,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				43744C5E2E09819200475BFA /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-				43870E1F2EC77B0700725294 /* XCLocalSwiftPackageReference "../ogury-google-adapter-spm" */,
+				43B80B6C2F3B39CF00F0236D /* XCLocalSwiftPackageReference "../ogury-google-adapter-spm" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 437449522E09517F00475BFA /* Products */;
@@ -260,6 +263,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ogury.sdk.ads.app.AdMobSpmTestApp;
 				PRODUCT_NAME = OgyGamAdapter;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -293,6 +297,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ogury.sdk.ads.app.AdMobSpmTestApp;
 				PRODUCT_NAME = OgyGamAdapter;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -501,7 +506,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		43870E1F2EC77B0700725294 /* XCLocalSwiftPackageReference "../ogury-google-adapter-spm" */ = {
+		43B80B6C2F3B39CF00F0236D /* XCLocalSwiftPackageReference "../ogury-google-adapter-spm" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "../ogury-google-adapter-spm";
 		};
@@ -530,6 +535,10 @@
 			productName = GoogleMobileAds;
 		};
 		43870E202EC77B0700725294 /* OguryGoogleMobileAdsAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OguryGoogleMobileAdsAdapter;
+		};
+		43B80B6D2F3B39CF00F0236D /* OguryGoogleMobileAdsAdapter */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = OguryGoogleMobileAdsAdapter;
 		};
