@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OguryMediationGoogleMobileAds",
-            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.2.0.0/OguryMediationGoogleMobileAds-5.2.0.0.zip",
-            checksum: "eff1952b29ea349806000c31b6233fa7e9be55de6f656574bf8fdf03add424f8"
+            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.2.1/OguryMediationGoogleMobileAds-5.2.1.zip",
+            checksum: "45d23cc153652e26b3843da970f797266c3581d88445f5f4d5d85835866b40b8"
         ),
         .target(
             name: "OguryGoogleMobileAdsAdapter",
@@ -30,8 +30,7 @@ let package = Package(
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ],
             linkerSettings: [
-                .linkedLibrary("c++"),
-                .unsafeFlags(["-ObjC"]) 
+                .linkedLibrary("c++")
             ]
         )
     ]
