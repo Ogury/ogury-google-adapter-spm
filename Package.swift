@@ -13,14 +13,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Ogury/ogury-sdk-spm", from: "5.2.3"),
+        .package(url: "https://github.com/Ogury/ogury-sdk-spm", from: "5.3.0"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", from: "12.13.0"),
     ],
     targets: [
         .binaryTarget(
             name: "OguryMediationGoogleMobileAds",
-            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.2.300/OguryMediationGoogleMobileAds-5.2.300.zip",
-            checksum: "0bf13798160a0adc8c4770369436122ff4f043b76443337908bfca6f5e451151"
+            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.3.0/OguryMediationGoogleMobileAds-5.3.0.zip",
+            checksum: "e7f3972b82c4928cc3a0a5a1d5030d78be6476a9ec820a5c325e7a9ba8d85da8"
         ),
         .target(
             name: "OguryGoogleMobileAdsAdapter",

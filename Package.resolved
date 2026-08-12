@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Ogury/ogury-sdk-spm",
       "state" : {
-        "revision" : "13cbb47f4829b0acdedd74b5227e3c5a56d306a0",
-        "version" : "5.2.3"
+        "revision" : "240709ab65dab10989c49e725ce85208e066e559",
+        "version" : "5.3.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads",
       "state" : {
-        "revision" : "32c61bd35c10517bb9d1d28252af71fe7fd3d0c8",
-        "version" : "12.13.0"
+        "revision" : "1239c23464503053c17d37ee5daa70de3455e9c8",
+        "version" : "12.14.0"
       }
     },
     {
