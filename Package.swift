@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "OguryGoogleMobileAdsAdapter",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
     products: [
         .library(
@@ -13,14 +13,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Ogury/ogury-sdk-spm", from: "5.3.0"),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", from: "12.13.0"),
+        .package(url: "https://github.com/Ogury/ogury-sdk-spm", from: "5.3.1"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", "12.13.0"..<"14.0.0"),
     ],
     targets: [
         .binaryTarget(
             name: "OguryMediationGoogleMobileAds",
-            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.3.0/OguryMediationGoogleMobileAds-5.3.0.zip",
-            checksum: "e7f3972b82c4928cc3a0a5a1d5030d78be6476a9ec820a5c325e7a9ba8d85da8"
+            url: "https://binaries.ogury.co/release/mediation-google-mobiles-ads-ios/5.3.100/OguryMediationGoogleMobileAds-5.3.100.zip",
+            checksum: "0c9fd8477836569db885734d3c8ceae2522cddee71ad56ef1baa91f6ac4dce47"
         ),
         .target(
             name: "OguryGoogleMobileAdsAdapter",
