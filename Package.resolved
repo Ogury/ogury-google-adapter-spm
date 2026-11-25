@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Ogury/ogury-sdk-spm",
       "state" : {
-        "revision" : "772e7dd63b23d4b0aa12569515940cbb8dc0659f",
-        "version" : "5.3.1"
+        "revision" : "4c7301f58c0c515900d47535d07a96fe9bb682c2",
+        "version" : "5.4.0"
       }
     },
     {
